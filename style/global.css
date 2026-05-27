@@ -43,4 +43,74 @@
   --label-medium: 700 0.875rem/1.5rem var(--ff-inter);
   --label-small: 700 0.75rem/1rem var(--ff-inter);
   --link: 500 0.75rem/1rem var(--ff-inter);
+  --calendar: 500 1rem/1rem var(--ff-inter);
+}
+
+
+body {
+  width: 24.374rem;
+  height: auto;
+  background: var(--background-primary);
+
+  & main {
+    width: 21.875rem;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-inline: auto;
+    
+  }
+}
+
+@media (width >= 80em) {
+  body {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    & main {
+      position: relative;
+      top: -3rem;
+      width: 54.375rem;
+      height: 48rem;
+      
+      margin-top: 0rem;
+      margin-inline: auto;
+      padding: 5rem;
+      overflow: hidden;
+    
+  }
+
+  /* Scrollbar inteira */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+  background: var(--background-secondary);
+  border-left: 1px solid var(--border-divisor);
+}
+
+/* Parte que desliza */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    var(--background-brand),
+    var(--background-highlights)
+  );
+
+  border-radius: 999px;
+  border: 3px solid var(--background-secondary);
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--content-brand);
+}
+
+/* Quando clicar */
+::-webkit-scrollbar-thumb:active {
+  background: var(--accent-blue);
+}
+
+  }
 }

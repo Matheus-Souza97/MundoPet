@@ -1,0 +1,229 @@
+.cards {
+  margin-bottom: 2rem;
+
+  width: 100%;
+  height: auto;
+}
+.cards-wrapper{
+  width: 100%;
+  height: auto;
+
+  margin-top: 2rem;
+  
+  background: var(--background-tertiary);
+
+  border-radius: 0.625rem;
+
+  & h2 {
+    font: var(--label-large);
+  }
+
+  & ul {
+    list-style: none;
+  }
+
+  & h3 {
+    font: var(--label-medium);
+  }
+
+  & p {
+    font: var( --paragraph-medium);
+  }
+
+  & #period {
+    display: flex;
+    
+    gap: 0.75rem;
+
+    color: var(--content-primary);
+  }
+
+  & #hour, & #clientName, & #service {
+    color: var(--content-secondary);
+  }
+
+  #checkin {
+    display: inline;
+    margin-right: 1rem;
+  }
+
+  & #petName, #checkin {
+    color: var(--content-primary);
+  } 
+}
+
+#morning, #afternoon, #night {
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 0.75rem 0.75rem;
+  padding-inline: 1.25rem;
+
+  border-bottom: 2px solid var(--border-divisor);
+}
+
+.agendaments-warapper {
+  display: flex;
+
+  width: 100%;
+  height: auto;
+
+  padding-block: 2rem;
+
+  & li {
+    width: 100%;
+    height: auto;
+
+    margin-left: 0rem;
+
+    padding-left: 0.75rem;
+
+    padding-bottom: 1rem;
+    
+  }
+  & #info {
+    display: inline-block;
+  }
+  
+  & #petName, & #clientName {
+    display: inline;
+  }
+
+  & #service {
+    margin-left: 0rem;
+  }
+
+  & a {
+    padding-left: 11.5rem;
+    text-decoration: none;
+    font: var(--paragraph-small);
+    color: var(--content-tertiary);
+  }
+}
+
+#new {
+  position: relative;
+
+  width: 13.625rem;
+  height: 3rem;
+
+  right: -5rem;
+
+  margin-bottom: 2rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  background: var(--background-brand);
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font: var(--label-large);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+#new::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    0deg,
+    var(--background-brand) 40%,
+    var(--background-highlights) 100%
+  );
+
+  opacity: 0;
+
+  transition: opacity 0.25s ease;
+}
+
+#new:hover {
+  transform: scale(1.02);
+
+  box-shadow: 0 0 15px var(--background-highlights);
+}
+
+#new:hover::before {
+  opacity: 0;
+}
+
+#new span {
+  position: relative;
+  z-index: 1;
+}
+
+@media (width >= 80em) {
+  .cards {
+    width: 100%;
+    height: 37rem;
+    overflow: auto;
+    
+  }
+  .agendaments-warapper {
+    display: flex;
+    
+
+    width: 100%;
+    height: auto;
+
+    padding-block: 1rem;
+
+    & li {
+      width: 41.9375rem;
+      height: 3rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-left: 1.25rem;
+
+      padding-left: 0.75rem;
+      padding-right: 1.21875rem;
+    }
+    & #info {
+      display: inline-block;
+    }
+
+    & #petName, & #clientName, & #service {
+      display: inline;
+    }
+
+    & #service {
+      margin-left: 1rem;
+    }
+
+    & a {
+      right: 2rem;
+      bottom: 1rem;
+
+      padding-left: 0rem;
+    }
+  }
+  #new {
+    display: flex;
+
+    position: absolute;
+
+    width: 13.625rem;
+    height: 3rem;
+
+    right: 2rem;
+    bottom: 5rem;
+    margin-bottom: 0;
+
+    transform: translateX(0%);
+  }
+}
+
+

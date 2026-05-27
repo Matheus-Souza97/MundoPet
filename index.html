@@ -8,10 +8,147 @@
     <title>MUNDOPET</title>
     <link rel="icon" href="./assets/logo.svg" type="image/png" />
 
+    <link rel="stylesheet" href="style/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="assets/logo.svg" alt="Logo MUNDOPET" />
+        <p>MUNDOPET</p>
+      </div>
+    </header>
+    <main>
+      <section class="agend">
+        <div id="agend">
+          <h1>Sua agenda</h1>
+          <p>
+            Aqui você pode ver todos os clientes e serviços agendados para hoje.
+          </p>
+        </div>
+        <div from="date">
+          <input type="date" class="date" id="date" value="2026-05-10" />
+          <img id="arrow" src="assets/arrow.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="cards-wrapper">
+          <div id="morning">
+            <h2 id="period"><img src="assets/morning.svg" alt="" />Manhã</h2>
+            <h2 id="hour">09h-12h</h2>
+          </div>
+          <div class="agendaments-warapper">
+            <ul>
+              <li>
+                <div id="info">
+                  <h3 id="checkin">
+                    09:00
+                    <h3 id="petName">Thor</h3>
+                  </h3>
+                  <h3 id="clientName">/ Fernanda Costa</h3>
+                </div>
+                <p id="service">Vacinação</p>
+                <a href="#">Remover agendamento</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cards-wrapper">
+          <div id="afternoon">
+            <h2 id="period"><img src="assets/afternoom.svg" alt="" />Tarde</h2>
+            <h2 id="hour">13h-18h</h2>
+          </div>
+          <div class="agendaments-warapper">
+            <ul>
+              <li>
+                <div id="info">
+                  <h3 id="checkin">
+                    13:00
+                    <h3 id="petName">Mel</h3>
+                  </h3>
+                  <h3 id="clientName">/ João Souza</h3>
+                </div>
+                <p id="service">Corte de Unhas</p>
+                <a href="#">Remover agendamento</a>
+              </li>
+              <li>
+                <div id="info">
+                  <h3 id="checkin">
+                    14:00
+                    <h3 id="petName">Bella</h3>
+                  </h3>
+                  <h3 id="clientName">/ Pedro Martins</h3>
+                </div>
+                <p id="service">Aplicação de Anti-pulgas</p>
+                <a href="#">Remover agendamento</a>
+              </li>
+              <li>
+                <div id="info">
+                  <h3 id="checkin">
+                    15:00
+                    <h3 id="petName">Simba</h3>
+                  </h3>
+                  <h3 id="clientName">/ Juliana Rocha</h3>
+                </div>
+                <p id="service">Tosa Higiênica</p>
+                <a href="#">Remover agendamento</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cards-wrapper">
+          <div id="night">
+            <h2 id="period"><img src="assets/night.svg" alt="" />Noite</h2>
+            <h2 id="hour">19h-21h</h2>
+          </div>
+          <div class="agendaments-warapper">
+            <ul>
+              <li>
+                <div id="info">
+                  <h3 id="checkin">
+                    19:00
+                    <h3 id="petName">Max</h3>
+                  </h3>
+                  <h3 id="clientName">/ Camila Santos</h3>
+                </div>
+                <p id="service">Limpeza de Dentes</p>
+                <a href="#">Remover agendamento</a>
+              </li>
+              <li>
+                <div id="info">
+                  <h3 id="checkin">
+                    19:00
+                    <h3 id="petName">Max</h3>
+                  </h3>
+                  <h3 id="clientName">/ Camila Santos</h3>
+                </div>
+                <p id="service">Limpeza de Dentes</p>
+                <a href="#">Remover agendamento</a>
+              </li>
+              <li>
+                <div id="info">
+                  <h3 id="checkin">
+                    19:00
+                    <h3 id="petName">Max</h3>
+                  </h3>
+                  <h3 id="clientName">/ Camila Santos</h3>
+                </div>
+                <p id="service">Limpeza de Dentes</p>
+                <a href="#">Remover agendamento</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section>
+      <button id="new" type="submit">NOVO AGENDAMENTO</button>
+    </section>
+  </body>
 </html>
