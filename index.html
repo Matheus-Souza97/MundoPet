@@ -22,6 +22,7 @@
       </div>
     </header>
     <main>
+      <div class="overlay"></div>
       <section class="agend">
         <div id="agend">
           <h1>Sua agenda</h1>
@@ -150,5 +151,59 @@
     <section>
       <button id="new" type="submit">NOVO AGENDAMENTO</button>
     </section>
+    <form action="">
+      <div id="instructions">
+        <h1>Agende um atendimento</h1>
+        <p>Preencha os dados do cliente para realizar o agendamento:</p>
+      </div>
+
+      <div class="data">
+        <label for="tutorName">Nome do tutor</label>
+        <div id="tutor">
+          <input type="text" id="tutorName" required />
+        </div>
+
+        <label for="petName">Nome do pet</label>
+        <div id="pet">
+          <input type="text" id="petName" required />
+        </div>
+
+        <label for="contact">Telefone</label>
+        <div id="phone">
+          <input type="text" id="contact" required />
+        </div>
+
+        <label for="description">Descrição do serviço</label>
+        <textarea name="" id="description" required></textarea>
+
+        <div id="dateAndHour">
+          <label for="calendar">Data</label>
+          <div id="date">
+            <input type="date" id="calendar" required />
+          </div>
+
+          <label for="clock">Hora</label>
+          <div id="select-warapper">
+            <select name="" id="select" id="clock" required>
+              <option value=""></option>
+              <option value="9">09:00</option>
+              <option value="10">10:00</option>
+              <option value="11">11:00</option>
+              <option value="12">12:00</option>
+              <option value="13">13:00</option>
+              <option value="14">14:00</option>
+              <option value="15">15:00</option>
+              <option value="16">16:00</option>
+              <option value="17">17:00</option>
+              <option value="18">18:00</option>
+              <option value="19">19:00</option>
+              <option value="20">20:00</option>
+              <option value="21">21:00</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button id="create">AGENDAR</button>
+    </form>
   </body>
 </html>

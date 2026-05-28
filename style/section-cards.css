@@ -111,55 +111,6 @@
   right: -5rem;
 
   margin-bottom: 2rem;
-
-  border: none;
-  border-radius: 0.5rem;
-
-  background: var(--background-brand);
-
-  overflow: hidden;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font: var(--label-large);
-
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-#new::before {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background: linear-gradient(
-    0deg,
-    var(--background-brand) 40%,
-    var(--background-highlights) 100%
-  );
-
-  opacity: 0;
-
-  transition: opacity 0.25s ease;
-}
-
-#new:hover {
-  transform: scale(1.02);
-
-  box-shadow: 0 0 15px var(--background-highlights);
-}
-
-#new:hover::before {
-  opacity: 0;
-}
-
-#new span {
-  position: relative;
-  z-index: 1;
 }
 
 @media (width >= 80em) {

@@ -61,6 +61,76 @@ body {
   }
 }
 
+/* Overlay que cobre a tela inteira */
+.overlay {
+  position: absolute;
+  left: 0;
+  display: flex;
+  width: 200%;
+  height: 150%;
+  background: rgba(0, 0, 0, 0.01);
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+
+  background: var(--background-brand);
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font: var(--label-large);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+button::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    0deg,
+    var(--background-brand) 40%,
+    var(--background-highlights) 100%
+  );
+
+  opacity: 0;
+
+  transition: opacity 0.25s ease;
+}
+
+button:hover {
+  transform: scale(1.02);
+
+  box-shadow: 0 0 15px var(--background-highlights);
+}
+
+button:hover::before {
+  opacity: 0;
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+}
+
+
 @media (width >= 80em) {
   body {
     overflow: hidden;
