@@ -1,5 +1,5 @@
 header{
-  & #logo {
+  #logo {
     z-index: 5;
     width: 9.5225rem;
     height: 3rem;
@@ -18,7 +18,7 @@ header{
     font: var(--label-large);
     color: var(--content-brand);
 
-    & img[src*="logo"] {
+    img[src*="logo"] {
       width: 1.25rem;
       height: 1.25rem;
     }

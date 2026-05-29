@@ -52,7 +52,7 @@ body {
   height: auto;
   background: var(--background-primary);
 
-  & main {
+  main {
     width: 21.875rem;
     height: auto;
     margin-top: 0.5rem;
@@ -136,7 +136,7 @@ button span {
     overflow: hidden;
     width: auto;
     height: auto;
-    & main {
+    main {
       position: relative;
       top: -3rem;
       width: 54.375rem;

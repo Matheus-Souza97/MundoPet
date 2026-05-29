@@ -8,11 +8,11 @@
   display: inline-block;
   width: 21.875rem;
   height: 5.25rem;
-  & h1 {
+  h1 {
     font: var(--title);
     color: var(--content-primary);
   }
-  & p {
+  p {
     font: var(--paragraph-medium);
     color: var(--content-secondary);
   }
@@ -27,6 +27,10 @@
 }
 
 .date {
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   
   padding-left: 40px;
 

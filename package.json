@@ -4,13 +4,25 @@
   "author": "Matheus Souza",
   "scripts": {
     "server": "json-server --watch server.json --port 3333",
+    "dev": "webpack serve",
     "build": "webpack"
   },
   "dependencies": {
+    "dayjs": "^1.11.21",
     "json-server": "^1.0.0-beta.15"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "babel-loader": "^10.1.1",
+    "copy-webpack-plugin": "^14.0.0",
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.7",
+    "sass": "^1.100.0",
+    "sass-loader": "^17.0.0",
+    "style-loader": "^4.0.0",
     "webpack": "^5.107.2",
-    "webpack-cli": "^7.0.3"
+    "webpack-cli": "^7.0.3",
+    "webpack-dev-server": "^5.2.4"
   }
 }

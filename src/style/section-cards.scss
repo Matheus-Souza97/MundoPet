@@ -14,23 +14,23 @@
 
   border-radius: 0.625rem;
 
-  & h2 {
+  h2 {
     font: var(--label-large);
   }
 
-  & ul {
+  ul {
     list-style: none;
   }
 
-  & h3 {
+  h3 {
     font: var(--label-medium);
   }
 
-  & p {
+  p {
     font: var( --paragraph-medium);
   }
 
-  & #period {
+  #period {
     display: flex;
     
     gap: 0.75rem;
@@ -38,7 +38,7 @@
     color: var(--content-primary);
   }
 
-  & #hour, & #clientName, & #service {
+  #hour, & #clientName, & #service {
     color: var(--content-secondary);
   }
 
@@ -47,7 +47,7 @@
     margin-right: 1rem;
   }
 
-  & #petName, #checkin {
+  #petName, #checkin {
     color: var(--content-primary);
   } 
 }
@@ -71,7 +71,7 @@
 
   padding-block: 2rem;
 
-  & li {
+  li {
     width: 100%;
     height: auto;
 
@@ -81,7 +81,7 @@
 
     padding-bottom: 1rem;
 
-    & a {
+    a {
       transition: color .2s ease;
     }
 
@@ -91,19 +91,19 @@
     }
     
   }
-  & #info {
+  #info {
     display: inline-block;
   }
   
-  & #petName, & #clientName {
+  #petName, & #clientName {
     display: inline;
   }
 
-  & #service {
+  #service {
     margin-left: 0rem;
   }
 
-  & a {
+  a {
     padding-left: 11.5rem;
     text-decoration: none;
     font: var(--paragraph-small);
@@ -138,7 +138,7 @@
 
     padding-block: 1rem;
 
-    & li {
+    li {
       width: 41.9375rem;
       height: 3rem;
 
@@ -151,19 +151,19 @@
       padding-left: 0.75rem;
       padding-right: 1.21875rem;
     }
-    & #info {
+    #info {
       display: inline-block;
     }
 
-    & #petName, & #clientName, & #service {
+    #petName, & #clientName, & #service {
       display: inline;
     }
 
-    & #service {
+    #service {
       margin-left: 1rem;
     }
 
-    & a {
+    a {
       right: 2rem;
       bottom: 1rem;
 
