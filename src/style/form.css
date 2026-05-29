@@ -165,7 +165,7 @@ form {
     top: 40%;
     transform: translateY(-50%);
 
-    background: url(../assets/tutor.svg) no-repeat;
+    background: url(../../src/assets/tutor.svg) no-repeat;
   }
   #pet::after{
     content: "";
@@ -181,7 +181,7 @@ form {
     top: 45%;
     transform: translateY(-50%);
 
-    background: url(../assets/pet.svg) no-repeat;
+    background: url(../../src/assets/pet.svg) no-repeat;
   }
   #phone::after{
     content: "";
@@ -197,7 +197,7 @@ form {
     top: 45%;
     transform: translateY(-50%);
 
-    background: url(../assets/phone.svg) no-repeat;
+    background: url(../../src/assets/phone.svg) no-repeat;
   }
   #date::after{
     content: "";
@@ -213,7 +213,7 @@ form {
     top: 40%;
     transform: translateY(-50%);
 
-    background: url(../assets/calendar.svg) no-repeat;
+    background: url(../../src/assets/calendar.svg) no-repeat;
 
     z-index: 2;
   }
@@ -232,7 +232,7 @@ form {
     top: 50%;
     transform: translateY(-50%);
 
-    background: url(../assets/clock.svg) no-repeat;
+    background: url(../../src/assets/clock.svg) no-repeat;
   }
 
   & input[type="date"]::-webkit-calendar-picker-indicator {

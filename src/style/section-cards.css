@@ -80,6 +80,15 @@
     padding-left: 0.75rem;
 
     padding-bottom: 1rem;
+
+    & a {
+      transition: color .2s ease;
+    }
+
+    & a:hover{
+      color: var(--content-primary);
+      text-decoration: underline;
+    }
     
   }
   & #info {
