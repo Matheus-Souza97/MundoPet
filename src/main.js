@@ -13,3 +13,5 @@ import "./style/form.scss";
 import "./modules/form/submit.js";
 import "./modules/form/format-time.js";
 import "./modules/form/overlay.js";
+import "../src/services/api-config.js";
+import "../src/services/schedule-new.js";

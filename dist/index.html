@@ -21,7 +21,7 @@
       </div>
     </header>
     <main>
-      <div></div>
+      <div id="agendDisplay" class="overlay"></div>
       <section class="agend">
         <div id="agend">
           <h1>Sua agenda</h1>
@@ -152,9 +152,10 @@
       </section>
     </main>
     <section>
-      <button id="new" type="submit">NOVO AGENDAMENTO</button>
+      <button id="newAgend" type="submit">NOVO AGENDAMENTO</button>
     </section>
-    <form action="" class="hidden">
+    <form action="">
+      <img src="src/assets/close.svg" alt="close" id="close" />
       <div id="instructions">
         <h1>Agende um atendimento</h1>
         <p>Preencha os dados do cliente para realizar o agendamento:</p>
@@ -166,9 +167,9 @@
           <input type="text" id="tutorName" required />
         </div>
 
-        <label for="petName">Nome do pet</label>
+        <label for="pet_Name">Nome do pet</label>
         <div id="pet">
-          <input type="text" id="petName" required />
+          <input type="text" id="pet_Name" required />
         </div>
 
         <label for="contact">Telefone</label>

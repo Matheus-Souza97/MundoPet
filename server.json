@@ -1,3 +1,14 @@
 {
-  "schedules": []
+  "schedules": [
+    {
+      "name": "Matheus",
+      "petName": "Romeu",
+      "contact": "981653260",
+      "service": "banho",
+      "date": "2026-06-02",
+      "time": "16",
+      "id": "jgk6WlKyiSc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
