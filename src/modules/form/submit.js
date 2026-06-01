@@ -15,7 +15,6 @@ const clock = document.getElementById("select");
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
-
   if (isEmpty()) {
     return;
   } else {

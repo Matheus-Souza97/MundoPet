@@ -15,3 +15,6 @@ import "./modules/form/format-time.js";
 import "./modules/form/overlay.js";
 import "../src/services/api-config.js";
 import "../src/services/schedule-new.js";
+import "../src/services/schedule-fetch-by-day.js";
+import "../src/modules/schedules/load.js";
+import "../src/modules/schedules/showSchedules.js";
