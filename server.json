@@ -4,19 +4,37 @@
       "name": "Matheus",
       "petName": "Romeu",
       "contact": "981653260",
-      "service": "banho",
+      "service": "Banho e tosa",
       "date": "2026-06-02",
-      "time": "14",
-      "id": "_BEdpyQh1_4"
+      "time": "10",
+      "id": "bkZL0pIZzvM"
     },
     {
-      "name": "Matheus",
-      "petName": "Romeu",
-      "contact": "981653260",
-      "service": "banho",
+      "name": "Miguel",
+      "petName": "Simba",
+      "contact": "984655698",
+      "service": "Corte das unhas",
       "date": "2026-06-02",
-      "time": "15",
-      "id": "GCk5mFrdlco"
+      "time": "16",
+      "id": "3w2zYeR2IlY"
+    },
+    {
+      "name": "Ana",
+      "petName": "Kiara",
+      "contact": "984458762",
+      "service": "Banho",
+      "date": "2026-06-02",
+      "time": "11",
+      "id": "5JqWdGqUmFM"
+    },
+    {
+      "name": "Beatriz",
+      "petName": "Mel",
+      "contact": "984459556",
+      "service": "Banho e tosa",
+      "date": "2026-06-02",
+      "time": "20",
+      "id": "9_q2Qf98HN8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
