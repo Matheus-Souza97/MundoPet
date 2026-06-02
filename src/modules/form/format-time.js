@@ -1,12 +1,28 @@
-"use strick";
+"use strict";
 
 import dayjs from "dayjs";
+
+import { scheduleFetchByDay } from "../../services/schedule-fetch-by-day.js";
+import { apiConfig } from "../../services/api-config.js";
+import { showSchedules } from "../schedules/showSchedules.js";
 
 const calendar = document.getElementById("calendar");
 const date = document.getElementById("date");
 const clock = document.getElementById("select");
 
 date.value = dayjs().format("YYYY-MM-DD");
+async function loadSchedules(date) {
+  const response = await fetch(`${apiConfig.baseURL}/schedules`);
+  const data = await response.json();
+  return data;
+}
+
+async function init() {
+  const data = await loadSchedules(date);
+  await showSchedules(data);
+}
+
+init();
 
 //Define a data minima como sendo o hoje e ja deixa carregado o dia no calendario
 //calendar.value = dayjs().format("YYYY-MM-DD");

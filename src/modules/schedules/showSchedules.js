@@ -129,11 +129,13 @@ export async function showSchedules(schedules) {
       p.id = "service";
 
       const a = document.createElement("a");
+      a.classList.add("remove");
 
       clientName.textContent = ` / ${schedules[index].name}`;
       petNameDisplay.textContent = schedules[index].petName;
       p.textContent = schedules[index].service;
       a.textContent = "Remover agendamento";
+      a.id = schedules[index].id;
       checkin.textContent = `${schedules[index].time}h`;
 
       info.append(checkin, petNameDisplay, clientName);

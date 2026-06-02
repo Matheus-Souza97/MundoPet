@@ -18,3 +18,5 @@ import "../src/services/schedule-new.js";
 import "../src/services/schedule-fetch-by-day.js";
 import "../src/modules/schedules/load.js";
 import "../src/modules/schedules/showSchedules.js";
+import "../src/services/delete.js";
+import "../src/services/deleteSchedule-by-id.js";
